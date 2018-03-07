@@ -6,7 +6,7 @@ html {
 body {
     background-image: url('../../images/backgrounds.jpg');
     background-size: cover;
-    height: 105%;
+    height: 100%;
 }
 
 .headbutton {

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style2.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <title>Hangman Game Group Project</title>
+    </head>
+
+    <body>
+            <nav class="nav">
+                <div class="headbutton"><span id="blinker">Hangman Game</span></div>
+                <ul>
+                    <li><div class="navbuttons one" id="easy">Easy</li></div>
+                    <li><div class="navbuttons two" id="medium">Medium</li></div>
+                    <li><div class="navbuttons three" id="hard">Hard</li></div>
+                </ul>
+            </nav>
+        <div class="wordbox"><br><p id="words"></p></div>
+        <div class="container">
+            <div class="wguesses">
+                <br>Wrong Guesses<br><br>
+                <p id="wrongguesses"></p>
+            </div>
+            <div class="stats">
+                <div class="wins"><br>Wins<br><br>
+                <p id="wincount"></p></div>
+                <div class="loss">
+                <br>Losses<br><br>
+                <p id="losscount"></p></div>
+            </div>
+            </div>
+            <div class="guesses">
+                <br>Guesses Remaining<br><br>
+                <p id="guessesremaining"></p></div>
+                <br>
+                <div id="clear">Clear</div>
+        
+    </body>
+    <script src="assets/javascript/game2.js"></script>
+</html>
+
+
+
+

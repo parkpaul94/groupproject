@@ -1,7 +1,7 @@
 html {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../../images/background.jpg');
+    background-image: url('../../images/backgrounds.jpg');
 }
 
 .blink {
@@ -56,7 +56,7 @@ html {
 /* menu base styles */
 
 nav{
-    background: #ffffff;
+    background-image: url('../../images/background.jpg');
     min-width: 100%;
     display: flex;
     justify-content: space-around;

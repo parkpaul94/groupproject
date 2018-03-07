@@ -27,7 +27,7 @@ function createBoard (randomGuess) {
             $(blanks).append("&nbsp;&nbsp;&nbsp;&nbsp;");
         }
         else {
-            $(blanks).append("_ &nbsp;");
+            $(blanks).append("&nbsp;_&nbsp;");
         }
     }
 }

@@ -8,7 +8,31 @@ function getRandomInt(min, max) {
 function getRandGuess (min, max, array) {
     var index = getRandomInt (min, max);
     var str = array[index];
-    return str;
+    var guessArray = [];
+    for(i = 0; i < str.length; i++) {
+        if (str.charAt(i) === ' ') {
+            guessArray.push(' ');
+        }
+        else {
+            guessArray.push(str.charAt(i));
+        }
+    }
+    return guessArray;
+    console.log(guessArray);
+}
+
+function createBoard (randomGuess) {
+    for(i = 0; i < randomGuess.length; i++) {
+        if (randomGuess[i] === ' ') {
+            $(blanks).append("&nbsp;&nbsp;&nbsp;&nbsp;");
+        }
+        else {
+            $(blanks).append("_ &nbsp;");
+        }
+    }
+}
+
+function writeHTML () {
     
 }
 
@@ -40,9 +64,10 @@ initializeGame: function() {
     $(wins).text(0);
     $(losses).text(0);
     $(wrong).text("none");
-    $(blanks).text(0);
+    $(blanks).text();
     $(remaining).text(0);
     this.cpuGuess = getRandGuess(0, this.gameArray.length, this.gameArray);
+    createBoard(this.cpuGuess);
     console.log(this.cpuGuess);
 },
 
@@ -56,12 +81,9 @@ playAgain: function() {
 $(document).ready(function() {
     $(easy).click(function() {
         easyGame.initializeGame();
-        let bull = confirm('play again');
-        if (bull) {
-            easyGame.playAgain();
+        document.onkeyup = function(event) {
+
         }
-        else {
-            easyGame.initializeGame();
-        }
+        
 })
 });

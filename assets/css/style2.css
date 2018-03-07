@@ -65,8 +65,11 @@ p {
     font-size: 20px;
 }
 
-
 #words {
+    font-size: 125px;
+}
+
+.wordbox {
     background-image: url('../../images/secondary.png');
     font-size: 125px;
     text-align: center;

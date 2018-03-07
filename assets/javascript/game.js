@@ -44,6 +44,7 @@ const remaining = "#guessesremaining";
 const easy = "#easy";
 const medium = "#medium";
 const hard = "#hard";
+const clear = "#clear";
 
 var gameBoardArray = [];
 var correctGuess = [];
@@ -61,11 +62,11 @@ var easyGame = {
                 "lax", "joy", "tax", "bat", "rat", "did", "wax", "mix", "fix", "man", "ran", "box"],
 
 initializeGame: function() {
-    $(wins).text(0);
-    $(losses).text(0);
-    $(wrong).text("none");
+    $(wins).text();
+    $(losses).text();
+    $(wrong).text();
     $(blanks).text();
-    $(remaining).text(0);
+    $(remaining).text();
     this.cpuGuess = getRandGuess(0, this.gameArray.length, this.gameArray);
     createBoard(this.cpuGuess);
     console.log(this.cpuGuess);
@@ -86,4 +87,9 @@ $(document).ready(function() {
         }
         
 })
+$(clear).click(function() {
+            $(wrong).empty();
+            $(blanks).empty();
+            $(remaining).empty();
+            })
 });

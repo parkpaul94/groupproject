@@ -73,11 +73,11 @@ p {
     text-align: center;
     margin: 20px auto;
     margin-bottom: -20px;
-    height: 40%;
+    height: 300px;
     width: 90%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
     border-radius: 0px 50px 0px 0px;
-    margin-top: 2.5%;
+    margin-top: 4%;
     opacity: .85;
 }
 
@@ -88,7 +88,6 @@ p {
     text-align: center;
     margin: 20px auto;
     width: 90%;
-    height: 21%;
     margin-bottom: -20px;
 }
 
@@ -138,7 +137,6 @@ p {
     width: 90%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
     flex: 1;
-    height: 17%;
     border-radius: 0px 0px 0px 50px;
     opacity: .85;
 

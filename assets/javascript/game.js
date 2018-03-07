@@ -90,6 +90,7 @@ $(document).ready(function() {
 $(clear).click(function() {
             $(wrong).empty();
             $(blanks).empty();
+            $(blanks).append('<br>')
             $(remaining).empty();
             })
 });

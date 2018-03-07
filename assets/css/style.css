@@ -9,6 +9,13 @@ body {
     height: 100%;
 }
 
+.gamecontainer {
+    height: 750px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
 .headbutton {
     padding: 25px;
     max-height: 80px;
